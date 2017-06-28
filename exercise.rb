@@ -68,3 +68,8 @@ end
 fav_colors << "red"
 fav_colors << "yellow"
 puts fav_colors
+
+# exercise 6
+new_movies = {1999 => ["The Matrix", "Star Wars: Episode 1", "The Mummy"], 2009 => ["Avatar", "Star Trek", "The Mummy"], 2019 => ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode 9"]}
+phone_buttons = [[1, 2, 3], [4, 5, 6], [7, 8, 9], ["\*", 0, "\#"]]
+countries = [{name: "Canada", continent: "North America", island: "no"}, {name: "Germany", continent: "Europe", island: "no"}, {name: "China", continent: "Asia", island: "no"}]
