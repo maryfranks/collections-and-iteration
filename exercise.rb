@@ -9,7 +9,7 @@ movies = {"Jaws" => 1975, "Lake Placid" => 1999, "Jurassic Park" => 1993}
 cities = {toronto: 6418000, la: 3929000, cologne: 1017000}
 ages_of_fam_hash = {mary: 34, megan: 30, lindsey: 32}
 
-# exercise 1
+#  exercise 1
 puts coin_flip
 puts fav_colors[0]
 puts ages_of_fam.sort
@@ -27,7 +27,7 @@ performing_artists.each do |artist|
   puts "I think #{artist} is great."
 end
 
-# exercise 3
+#  exercise 3
 puts performing_artists[0..1]
 movies.each do |movie, year|
   puts "#{movie} came out in #{year}."
@@ -36,7 +36,7 @@ ages_of_fam.reverse!.sort!
 puts ages_of_fam
 movies["Beauty and the Beast"] = [1991, 2017]
 
-# exercise 4
+# # exercise 4
 ages_of_fam.select do |age|
   age > 31
 end
@@ -47,7 +47,7 @@ puts performing_artists
 cities[:la] = 3000000
 puts cities
 
-# exercise 5
+# # exercise 5
 sum = 0
 cities.each do |key, value|
   sum += value
@@ -72,4 +72,45 @@ puts fav_colors
 # exercise 6
 new_movies = {1999 => ["The Matrix", "Star Wars: Episode 1", "The Mummy"], 2009 => ["Avatar", "Star Trek", "The Mummy"], 2019 => ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode 9"]}
 phone_buttons = [[1, 2, 3], [4, 5, 6], [7, 8, 9], ["\*", 0, "\#"]]
-countries = [{name: "Canada", continent: "North America", island: "no"}, {name: "Germany", continent: "Europe", island: "no"}, {name: "China", continent: "Asia", island: "no"}]
+
+
+# the other exercise 6
+skateboard = []
+
+20.times do |num|
+  skateboard << "I will not skateboard in the halls"
+end
+
+numbers_array = []
+50.times do |num|
+  numbers_array << num + 1
+end
+
+sum = 0
+numbers_array.each do |value|
+  sum += value
+end
+puts sum
+
+three_numbers = []
+50.times do |num|
+  three_numbers << [num + 1] * 3
+end
+three_numbers.flatten!
+
+countries = [
+  {name: "Canada",  continent: "North America", island: "no"},
+  {name: "Germany", continent: "Europe",        island: "no"},
+  {name: "China",   continent: "Asia",          island: "yes"}
+]
+not_islands = countries.select do |country|
+  # country[:island] == "no"
+  false
+end
+p not_islands
+
+# canada = {name: "Canada",  continent: "North America", island: "no"}
+# long_values = canada.select do |key, value|
+#   value.length > 7
+# end
+# p long_values
