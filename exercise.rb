@@ -37,3 +37,12 @@ puts ages_of_fam
 movies["Beauty and the Beast"] = [1991, 2017]
 
 # exercise 4
+ages_of_fam.select do |age|
+  age > 31
+end
+puts ages_of_fam.max
+puts "#{coin_flip.count("heads")}"
+performing_artists.delete("benny goodman")
+puts performing_artists
+cities[:la] = 3000000
+puts cities
