@@ -26,3 +26,12 @@ puts cities[:la]
 performing_artists.each do |artist|
   puts "I think #{artist} is great."
 end
+
+# exercise 3
+puts performing_artists[0..1]
+movies.each do |movie, year|
+  puts "#{movie} came out in #{year}."
+end
+ages_of_fam.reverse!.sort!
+puts ages_of_fam
+movies["Beauty and the Beast"] = [1991, 2017]
