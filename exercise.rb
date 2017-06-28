@@ -46,3 +46,25 @@ performing_artists.delete("benny goodman")
 puts performing_artists
 cities[:la] = 3000000
 puts cities
+
+# exercise 5
+sum = 0
+cities.each do |key, value|
+  sum += value
+end
+puts sum
+
+ages_of_fam_hash.each do |name, age|
+  if age < 33
+    puts "#{name} is young"
+  else
+    puts "#{name} is old"
+  end
+end
+puts fav_colors[2..3]
+ages_of_fam.each do |age|
+  puts age + 1
+end
+fav_colors << "red"
+fav_colors << "yellow"
+puts fav_colors
