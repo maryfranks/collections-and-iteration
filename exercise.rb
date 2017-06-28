@@ -35,3 +35,5 @@ end
 ages_of_fam.reverse!.sort!
 puts ages_of_fam
 movies["Beauty and the Beast"] = [1991, 2017]
+
+# exercise 4
