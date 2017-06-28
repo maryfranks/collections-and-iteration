@@ -8,3 +8,10 @@ three_words = {array: "ordered, integer-indexed collections", hash: "collection 
 movies = {"Jaws" => 1975, "Lake Placid" => 1999, "Jurassic Park" => 1993}
 cities = {toronto: 6418000, la: 3929000, cologne: 1017000}
 ages_of_fam_hash = {mary: 34, megan: 30, lindsey: 32}
+
+puts coin_flip
+puts fav_colors[0]
+puts ages_of_fam.sort
+ages_of_fam << 0
+puts ages_of_fam
+puts movies["Jaws"]
